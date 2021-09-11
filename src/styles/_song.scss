@@ -5,9 +5,10 @@
   align-items: center;
   justify-content: center;
   img {
-    width: 15%;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
   }
   h2 {
     padding: 3rem 1rem 1rem 1rem;
@@ -20,7 +21,8 @@
 @media screen and (max-width: 768px) {
   .song-container {
     img {
-      width: 60%;
+      width: 250px;
+      height: 250px;
     }
   }
 }
@@ -35,5 +37,5 @@
 }
 
 .rotateSong {
-  animation: rotate 20s linear forwards infinite;
+  animation: rotate 10s linear forwards infinite;
 }

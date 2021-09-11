@@ -5,7 +5,7 @@
   width: 20rem;
   height: 100%;
   background: white;
-  box-shadow: 2px 2px 50px rgb(194, 194, 194);
+  box-shadow: 5px 2px 50px rgb(182, 181, 181);
   overflow: scroll;
   transform: translateX(-100%);
   transition: all 0.5s ease;
@@ -23,6 +23,7 @@
   transition: background 0.5s ease;
   img {
     width: 30%;
+    border-radius: 10%;
   }
   &:hover {
     background: rgb(225, 236, 240);
