@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
 body{
     background: #1b1b1b;
+    font-family: 'Merriweather', serif;
 }
 button{
     font-weight: bold;
@@ -20,6 +21,7 @@ button{
     background: transparent;
     color: white;
     transform: all 0.5s ease;
+    font-family: 'Merriweather', serif;
     &:hover{
         background-color: #23d997;
         color: white;
