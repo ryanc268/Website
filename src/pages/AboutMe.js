@@ -4,7 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection";
 import FaqSection from "../components/FaqSection";
 
-const AboutUs = () => {
+const AboutMe = () => {
   return (
     <>
       <AboutSection />
@@ -14,4 +14,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutMe;

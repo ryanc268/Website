@@ -1,9 +1,9 @@
 //Global Style
 import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
-import AboutUs from "./pages/AboutUs";
-import OurWork from "./pages/OurWork";
-import ContactUs from "./pages/ContactUs";
+import AboutMe from "./pages/AboutMe";
+import MyWork from "./pages/MyWork";
+import ContactMe from "./pages/ContactMe";
 import Nav from "./components/Nav";
 //Router
 import { Routes, Route } from "react-router-dom";
@@ -14,9 +14,9 @@ function App() {
       <GlobalStyle />
       <Nav />
       <Routes>
-        <Route path="/" exact element={<AboutUs />} />
-        <Route path="/work" exact element={<OurWork />} />
-        <Route path="/contact" exact element={<ContactUs />} />
+        <Route path="/" exact element={<AboutMe />} />
+        <Route path="/work" exact element={<MyWork />} />
+        <Route path="/contact" exact element={<ContactMe />} />
       </Routes>
     </div>
   );

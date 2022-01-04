@@ -25,7 +25,7 @@ const AboutSection = () => {
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
         </p>
-        <button>Contact Us</button>
+        <button>Contact Me</button>
       </Description>
       <Image>
         <img src={home1} alt="guy with a camera" />
