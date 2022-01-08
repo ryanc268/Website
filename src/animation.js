@@ -84,3 +84,12 @@ export const scrollReveal = {
     },
   },
 };
+
+export const swoop = {
+  hidden: { skew: "45deg" },
+  show: {
+    x: "100%",
+    skew: "0deg",
+    transition: { ease: "easeOut", duration: 1 },
+  },
+};
