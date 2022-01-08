@@ -8,9 +8,16 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html{
+    @media (max-width: 500px){
+        font-size: 40%;
+    }
+}
+
 body{
     background: #1b1b1b;
     font-family: 'Merriweather', serif;
+    overflow-x: hidden;
 }
 button{
     font-weight: bold;
