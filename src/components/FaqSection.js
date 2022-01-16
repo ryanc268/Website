@@ -19,10 +19,10 @@ const FaqSection = () => {
       ref={element}
     >
       <h2>
-        Any Questions <span>FAQ</span>
+        Have Questions? <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How Do I Start?">
+        <Toggle title="What Languages Do You Know?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -31,7 +31,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Daily Schedule">
+        <Toggle title="What Dev. Programs Are You Comfortable With?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -40,7 +40,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Different Payment Methods">
+        <Toggle title="What Technologies Have You Used For Your Games?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -49,7 +49,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="What Products do you offer?">
+        <Toggle title="What Are Your Favourite Dev. Tools?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -73,7 +73,7 @@ const Faq = styled(About)`
     font-weight: lighter;
   }
   .faq-line {
-    background: #cccccc;
+    background: #01c4fa;
     height: 0.2rem;
     margin: 2rem 0rem;
     width: 100%;

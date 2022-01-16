@@ -1,10 +1,10 @@
 import React from "react";
 //Import Icons
 import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
+import random from "../img/random.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import dragon from "../img/Snow-Dragon.png";
 //Styles
 import styled from "styled-components";
 import { About, Description, Image } from "../styles";
@@ -24,7 +24,7 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          High <span>quality</span> services
+          High <span>Quality</span> services
         </h2>
         <Cards>
           <Card>
@@ -32,33 +32,39 @@ const ServicesSection = () => {
               <img src={clock} alt="clock icon" />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Always motivated to find the most effective ways to solve
+              problems.
+            </p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="teamwork icon" />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Well versed in team development and Agile practices.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={diaphragm} alt="diaphragm icon" />
-              <h3>Diaphragm</h3>
+              <img src={random} alt="random icon" />
+              <h3>Placeholder</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="money icon" />
-              <h3>Affordable</h3>
+              <h3>Freelance</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Open to any and every freelance project within (or possibly
+              outside of) my skillset.
+            </p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="home2 icon" />
+        <img src={dragon} alt="Dragon Icon" />
       </Image>
     </Services>
   );
@@ -93,8 +99,7 @@ const Card = styled.div`
     align-items: center;
     h3 {
       margin-left: 1rem;
-      background: white;
-      color: black;
+      color: white;
       padding: 1rem;
     }
   }

@@ -30,7 +30,7 @@ const MyWork = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      style={{ background: "#fff" }}
+      style={{ background: "#1b1b1b" }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
@@ -39,7 +39,7 @@ const MyWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <Title variants={fade}>The Athlete</Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
@@ -48,7 +48,7 @@ const MyWork = () => {
         </Link>
       </Movie>
       <Movie variants={fade} animate={controls} initial="hidden" ref={element}>
-        <h2>The Racer</h2>
+        <Title>The Racer</Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
           <img src={theracer} alt="theracer" />
@@ -60,7 +60,7 @@ const MyWork = () => {
         initial="hidden"
         ref={element2}
       >
-        <h2>Good Times</h2>
+        <Title>Good Times</Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
           <img src={goodtimes} alt="goodtimes" />
@@ -83,11 +83,15 @@ const Work = styled(motion.div)`
   }
 `;
 
+const Title = styled(motion.h2)`
+  color: white;
+`;
+
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #23d997;
+    background: #01c4fa;
     margin-bottom: 3rem;
   }
   img {
@@ -108,20 +112,20 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: #fffebf;
+  background: #1f2b64;
   z-index: 2;
 `;
 
 const Frame2 = styled(Frame1)`
-  background: #ff8efb;
+  background: #219fcd;
 `;
 
 const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
+  background: #2f1051;
 `;
 
 const Frame4 = styled(Frame1)`
-  background: #8effa0;
+  background: #4dd9ff;
 `;
 
 export default MyWork;

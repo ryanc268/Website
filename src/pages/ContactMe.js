@@ -13,7 +13,7 @@ const ContactMe = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      style={{ background: "#fff" }}
+      style={{ background: "#1b1b1b" }}
     >
       <Title>
         <Hide>
@@ -46,7 +46,7 @@ const ContactMe = () => {
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
-  color: #353535;
+  color: white;
   min-height: 90vh;
   @media (max-width: 500px) {
     padding: 2rem;
@@ -56,7 +56,7 @@ const ContactStyle = styled(motion.div)`
 
 const Title = styled.div`
   margin-bottom: 4rem;
-  color: black;
+  color: white;
   @media (max-width: 500px) {
     margin-top: 5rem;
   }
@@ -70,7 +70,7 @@ const Circle = styled.div`
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  background: #353535;
+  background: white;
 `;
 
 const Social = styled(motion.div)`

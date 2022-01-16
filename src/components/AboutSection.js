@@ -1,5 +1,5 @@
 import React from "react";
-import home1 from "../img/home1.png";
+import drakala from "../img/Drakala.png";
 //Styles
 import { About, Description, Image, Hide } from "../styles";
 //Animations
@@ -13,25 +13,24 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+            <motion.h2 variants={titleAnim}>Revolutionary Solutions</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>
-              your <span>dreams</span> come
+              where <span>Passion</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>true.</motion.h2>
+            <motion.h2 variants={titleAnim}>comes first.</motion.h2>
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
+          Contact me for any inquiries or further interest in my projects.
         </motion.p>
         <motion.button variants={fade}>Contact Me</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={drakala} alt="Drakala" />
       </Image>
       <Wave />
     </About>
