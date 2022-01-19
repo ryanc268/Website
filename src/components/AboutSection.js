@@ -13,7 +13,7 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>Revolutionary Solutions</motion.h2>
+            <motion.h2 variants={titleAnim}>Revolutionary solutions</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>

@@ -60,6 +60,23 @@ p{
     line-height: 150%;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #282828;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #01C4FA;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #0980B9;
+}
+
 `;
 
 export default GlobalStyle;

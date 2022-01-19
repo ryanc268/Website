@@ -2,9 +2,8 @@ import React from "react";
 //Styles
 import styled from "styled-components";
 //Images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import card from "../img/valerianX-card.jpg";
+import goonIcon from "../img/goonbot-small.png";
 //Router
 import { Link } from "react-router-dom";
 //Animations
@@ -39,31 +38,23 @@ const MyWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <Title variants={fade}>The Athlete</Title>
+        <Title variants={fade}>
+          <span>Valerian X</span> C# Mobile Game
+        </Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-athlete">
+        <Link to="/work/valerianX">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            <motion.img variants={photoAnim} src={card} alt="ValerianX Card" />
           </Hide>
         </Link>
       </Movie>
       <Movie variants={fade} animate={controls} initial="hidden" ref={element}>
-        <Title>The Racer</Title>
+        <Title>
+          <span>Goon Bot</span> NodeJS Discord Bot
+        </Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
-        </Link>
-      </Movie>
-      <Movie
-        variants={fade}
-        animate={controls2}
-        initial="hidden"
-        ref={element2}
-      >
-        <Title>Good Times</Title>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes" />
+        <Link to="/work/goon-bot">
+          <img src={goonIcon} alt="Goon Bot Icon" />
         </Link>
       </Movie>
       <ScrollTop />
@@ -96,7 +87,7 @@ const Movie = styled(motion.div)`
   }
   img {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     object-fit: cover;
   }
 `;

@@ -67,9 +67,12 @@ const StyledNav = styled.nav`
     list-style: none;
   }
   #logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #01c4fa;
   }
   li {
     padding-left: 10rem;
@@ -100,6 +103,7 @@ const Line = styled(motion.div)`
   position: absolute;
   bottom: -80%;
   left: 60%;
+  border-radius: 2px;
   @media (max-width: 500px) {
     left: 0%;
   }

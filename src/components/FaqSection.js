@@ -19,24 +19,14 @@ const FaqSection = () => {
       ref={element}
     >
       <h2>
-        Have Questions? <span>FAQ</span>
+        Have questions? <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
         <Toggle title="What Languages Do You Know?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>In order of experience: </p>
             <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Earum, tempore?
-            </p>
-          </div>
-        </Toggle>
-        <Toggle title="What Dev. Programs Are You Comfortable With?">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Earum, tempore?
+              Java, C#, NodeJS, SQL, Javascript/JQuery, React, Kotlin, HTML5
             </p>
           </div>
         </Toggle>
@@ -50,6 +40,15 @@ const FaqSection = () => {
           </div>
         </Toggle>
         <Toggle title="What Are Your Favourite Dev. Tools?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Earum, tempore?
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What Type of Freelance Work Are You Open to Take?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>

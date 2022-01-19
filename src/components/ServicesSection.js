@@ -24,7 +24,7 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          High <span>Quality</span> services
+          High <span>Quality</span> experience
         </h2>
         <Cards>
           <Card>
@@ -57,8 +57,8 @@ const ServicesSection = () => {
               <h3>Freelance</h3>
             </div>
             <p>
-              Open to any and every freelance project within (or possibly
-              outside of) my skillset.
+              Open to any and every freelance project within,
+              <span> or possibly outside of</span>, my skillset.
             </p>
           </Card>
         </Cards>
