@@ -17,7 +17,7 @@ const ContactMe = () => {
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnim}>Get in touch</motion.h2>
+          <motion.h2 variants={titleAnim}>UNDER CONSTRUCTION</motion.h2>
         </Hide>
       </Title>
       <div>
