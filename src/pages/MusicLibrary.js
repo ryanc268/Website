@@ -62,6 +62,7 @@ function MusicPlayer() {
     } else if (url.includes("/music/")) {
       navigate("/music");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
   return (
