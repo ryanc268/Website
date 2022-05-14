@@ -30,9 +30,21 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
+        <Toggle title="What Did You Use to Make This Website?">
+          <div className="answer">
+            <p>
+              This website is entirely made using React with following
+              libraries:
+            </p>
+            <p>
+              React, Framer-Motion, Styled-Components,
+              React-Intersection-Observer and React-Router-Dom
+            </p>
+          </div>
+        </Toggle>
         <Toggle title="What Technologies Have You Used For Your Games?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Placeholder</p>
             <p>
               Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
               consectetur adipisicing elit. Earum, tempore?
@@ -41,7 +53,7 @@ const FaqSection = () => {
         </Toggle>
         <Toggle title="What Are Your Favourite Dev. Tools?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Placeholder</p>
             <p>
               Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
               consectetur adipisicing elit. Earum, tempore?
@@ -50,7 +62,7 @@ const FaqSection = () => {
         </Toggle>
         <Toggle title="What Type of Freelance Work Are You Open to Take?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Placeholder</p>
             <p>
               Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
               consectetur adipisicing elit. Earum, tempore?

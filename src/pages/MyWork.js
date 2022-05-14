@@ -22,7 +22,7 @@ import ScrollTop from "../components/ScrollTop";
 
 const MyWork = () => {
   const [element, controls] = useScroll();
-  const [element2, controls2] = useScroll();
+  //const [element2, controls2] = useScroll();
   return (
     <Work
       variants={pageAnimation}
