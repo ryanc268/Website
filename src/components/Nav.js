@@ -42,6 +42,14 @@ const Nav = () => {
             animate={{ width: url === "/contact" ? "50%" : "0%" }}
           />
         </li>
+        <li>
+          <Link to="/music">4. Music Production</Link>
+          <Line
+            transition={{ duration: 0.5 }}
+            initial={{ width: "0%" }}
+            animate={{ width: url === "/music" ? "50%" : "0%" }}
+          />
+        </li>
       </ul>
     </StyledNav>
   );
