@@ -39,7 +39,22 @@ function MusicPlayer() {
   };
   const songEndHandler = async () => {
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+    //updates the library to reflect that the next autiplayed song is "selected"
     await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+    const newSongs = songs.map((song) => {
+      if (song.id === songs[(currentIndex + 1) % songs.length].id) {
+        return {
+          ...song,
+          active: true,
+        };
+      } else {
+        return {
+          ...song,
+          active: false,
+        };
+      }
+    });
+    setSongs(newSongs);
     if (isPlaying) audioRef.current.play();
   };
 
