@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 const Nav = () => {
   const location = useLocation();
   const url = location.pathname;
-  console.log(url);
   return (
     <StyledNav>
       <h1>

@@ -8,8 +8,6 @@ import Song from "../components/musicplayer/Song";
 import Library from "../components/musicplayer/Library";
 import Nav from "../components/musicplayer/PlayerNav";
 
-//import { useLocation } from "react-router-dom";
-
 import data from "../data";
 
 function MusicPlayer() {

@@ -10,9 +10,6 @@ const Library = ({
 }) => {
   return (
     <div className={`library ${libraryStatus ? "active-library" : ""}`}>
-      <h2> </h2>
-      <h3>h </h3>
-      <br />
       <div className="library-songs">
 
         {songs.map((song) => (

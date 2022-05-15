@@ -20,9 +20,16 @@
 
 @media screen and (max-width: 768px) {
   .song-container {
+    min-height: 50vh;
     img {
       width: 200px;
       height: 200px;
+    }
+    h2 {
+      text-align: center;
+    }
+    h3 {
+      font-size: 1.5rem;
     }
   }
 }

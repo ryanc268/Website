@@ -26,7 +26,7 @@ const FaqSection = () => {
           <div className="answer">
             <p>In order of experience: </p>
             <p>
-              Java, C#, NodeJS, SQL, Javascript/JQuery, React, Kotlin, HTML5
+              Java, C#, NodeJS, SQL, Javascript/JQuery, React, Kotlin, Typescript, HTML5
             </p>
           </div>
         </Toggle>
