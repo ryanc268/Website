@@ -21,7 +21,18 @@ import WubbyRap from "./music/WubbyRap.mp3";
 
 //picture imports
 import dnbrandom from "./img/musicart/dnbrandom.jpg";
+import skrollex from "./img/musicart/skrollex.jpg";
 import tehryanlogo from "./img/musicart/tehryanlogo.png";
+import heavy from "./img/musicart/Heavy-Metal.jpg";
+import dark from "./img/musicart/dark-forest.jpg";
+import prosncons from "./img/musicart/prosncons.jpg";
+import robotdnb from "./img/musicart/robot-dnb.jpg";
+import glitchy from "./img/musicart/glitchy.jpg";
+import yourgod from "./img/musicart/your-god.jpg";
+import sunsetlogo from "./img/musicart/night-stroll.jpg";
+import nightridelogo from "./img/musicart/night-drive.jpg";
+import mysterylogo from "./img/musicart/mystery.jpg";
+
 
 function songLibrary() {
   //Use https://www.mailboxdrive.com/home/ to upload
@@ -42,7 +53,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2020,
       url: "/music/2",
-      cover: tehryanlogo,
+      cover: skrollex,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -64,7 +75,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2021,
       url: "/music/4",
-      cover: tehryanlogo,
+      cover: heavy,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -75,7 +86,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/5",
-      cover: tehryanlogo,
+      cover: dark,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -86,7 +97,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/6",
-      cover: tehryanlogo,
+      cover: prosncons,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -97,7 +108,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/7",
-      cover: tehryanlogo,
+      cover: robotdnb,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -108,7 +119,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2021,
       url: "/music/8",
-      cover: tehryanlogo,
+      cover: glitchy,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -119,7 +130,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2021,
       url: "/music/9",
-      cover: tehryanlogo,
+      cover: yourgod,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -130,7 +141,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/10",
-      cover: tehryanlogo,
+      cover: sunsetlogo,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -141,7 +152,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/11",
-      cover: tehryanlogo,
+      cover: nightridelogo,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -152,7 +163,7 @@ function songLibrary() {
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/12",
-      cover: tehryanlogo,
+      cover: mysterylogo,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
