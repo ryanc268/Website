@@ -42,7 +42,7 @@ const Nav = () => {
           />
         </li>
         <li>
-          <Link to="/music">4. Music Production</Link>
+          <Link to="/music">4. Music Prod</Link>
           <Line
             transition={{ duration: 0.5 }}
             initial={{ width: "0%" }}
@@ -96,6 +96,9 @@ const StyledNav = styled.nav`
       padding: 2rem;
       justify-content: space-around;
       width: 100%;
+      a {
+        font-size: 1.3rem;
+      }
       li {
         padding: 0;
       }

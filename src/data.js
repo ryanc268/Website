@@ -35,7 +35,6 @@ import mysterylogo from "./img/musicart/mystery.jpg";
 
 
 function songLibrary() {
-  //Use https://www.mailboxdrive.com/home/ to upload
   return [
     {
       name: "Neuro DnB [CLIP]",
