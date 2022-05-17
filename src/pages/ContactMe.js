@@ -24,19 +24,19 @@ const ContactMe = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send me a message</h2>
+            <h2>Not Ready Yet</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send me a message 2</h2>
+            <h2>In Progress</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send me a message 3</h2>
+            <h2>Another UNDER CONSTRUCTION</h2>
           </Social>
         </Hide>
       </div>

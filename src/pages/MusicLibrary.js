@@ -21,6 +21,7 @@ function MusicPlayer() {
     currentTime: 0,
     duration: 0,
     animationPercerntage: 0,
+    volume: 0.4,
   });
   const [libraryStatus, setLibraryStatus] = useState(false);
   //Event Handlers

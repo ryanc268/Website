@@ -46,7 +46,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.5 }}
             initial={{ width: "0%" }}
-            animate={{ width: url === "/music" ? "50%" : "0%" }}
+            animate={{ width: url.includes("/music") ? "50%" : "0%" }}
           />
         </li>
       </ul>
@@ -112,7 +112,7 @@ const Line = styled(motion.div)`
   width: 0%;
   position: absolute;
   bottom: -80%;
-  left: 60%;
+  left: auto;
   border-radius: 2px;
   @media (max-width: 500px) {
     left: 0%;

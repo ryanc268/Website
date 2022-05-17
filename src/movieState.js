@@ -12,17 +12,17 @@ export const MovieState = () => {
       url: "/work/valerianX",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Ryan the coding legend",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Wow!",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It's okay lmao.",
+          title: "Smile :)",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -35,17 +35,17 @@ export const MovieState = () => {
       secondaryImg: goonIcon,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Ryan the coding legend",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Wow!",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It's okay lmao.",
+          title: "Smile :)",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },

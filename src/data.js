@@ -1,6 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 //Music Imports
 import FutureDnb from "./music/FutureDnb.mp3";
+import ScaryDnb from "./music/ScaryDnb.mp3";
+import BassHouseRyanGina from "./music/BassHouseRyanGina.mp3";
 import HeavyDub from "./music/HeavyDub.mp3";
 import HukaeThingRyanGina from "./music/HukaeThingRyanGina.mp3";
 import MidTempo from "./music/MidTempo.mp3";
@@ -8,6 +10,7 @@ import Mystery from "./music/Mystery.mp3";
 import NeuroDnb from "./music/NeuroDnb.mp3";
 import NightRide from "./music/NightRide.mp3";
 import OldschoolDark from "./music/OldschoolDark.mp3";
+import YoshiDnb from "./music/YoshiDnb.mp3";
 import SadboiWubs from "./music/SadboiWubs.mp3";
 import Sunset from "./music/Sunset.mp3";
 import ThisIsYourGod from "./music/ThisIsYourGod.mp3";
@@ -21,12 +24,15 @@ import WubbyRap from "./music/WubbyRap.mp3";
 
 //picture imports
 import dnbrandom from "./img/musicart/dnbrandom.jpg";
+import basshouse from "./img/musicart/bass-house.jpg";
 import skrollex from "./img/musicart/skrollex.jpg";
-import tehryanlogo from "./img/musicart/tehryanlogo.png";
+import bubbles from "./img/musicart/bubbles.jpg";
 import heavy from "./img/musicart/Heavy-Metal.jpg";
 import dark from "./img/musicart/dark-forest.jpg";
+import yoshidnb from "./img/musicart/yoshi-dnb.jpg";
 import prosncons from "./img/musicart/prosncons.jpg";
 import robotdnb from "./img/musicart/robot-dnb.jpg";
+import spoopboi from "./img/musicart/spoop-boi.jpg";
 import glitchy from "./img/musicart/glitchy.jpg";
 import yourgod from "./img/musicart/your-god.jpg";
 import sunsetlogo from "./img/musicart/night-stroll.jpg";
@@ -47,6 +53,17 @@ function songLibrary() {
       audio: NeuroDnb,
     },
     {
+      name: "Bass House Demo",
+      artist: "Ryan Coppa & Gina",
+      year: 2022,
+      url: "/music/bass-house-demo",
+      cover: basshouse,
+      id: uuidv4(),
+      active: false,
+      color: ["#3B4E59", "#1B272F"],
+      audio: BassHouseRyanGina,
+    },
+    {
       name: "Sad Melodic Tune [CLIP]",
       artist: "Ryan Coppa",
       year: 2020,
@@ -62,7 +79,7 @@ function songLibrary() {
       artist: "Ryan Coppa & Gina",
       year: 2021,
       url: "/music/ryan-and-gina-riddim-collab",
-      cover: tehryanlogo,
+      cover: bubbles,
       id: uuidv4(),
       active: false,
       color: ["#3B4E59", "#1B272F"],
@@ -91,6 +108,17 @@ function songLibrary() {
       audio: OldschoolDark,
     },
     {
+      name: "Yoshi Dnb Tune [CLIP]",
+      artist: "Ryan Coppa",
+      year: 2021,
+      url: "/music/yoshi-dnb-tune",
+      cover: yoshidnb,
+      id: uuidv4(),
+      active: false,
+      color: ["#3B4E59", "#1B272F"],
+      audio: YoshiDnb,
+    },
+    {
       name: "Rap Dubstep Tune [CLIP]",
       artist: "Ryan Coppa",
       year: 2022,
@@ -111,6 +139,17 @@ function songLibrary() {
       active: false,
       color: ["#3B4E59", "#1B272F"],
       audio: FutureDnb,
+    },
+    {
+      name: "Spooky Scary Dnb [CLIP]",
+      artist: "Ryan Coppa",
+      year: 2020,
+      url: "/music/spooky-scary-dnb",
+      cover: spoopboi,
+      id: uuidv4(),
+      active: false,
+      color: ["#3B4E59", "#1B272F"],
+      audio: ScaryDnb,
     },
     {
       name: "Glitchy Mid-Tempo [CLIP]",

@@ -44,6 +44,7 @@ const Player = ({
       setIsPlaying(!isPlaying);
     } else {
       audioRef.current.play();
+      audioRef.current.volume = songInfo.volume;
       setIsPlaying(!isPlaying);
     }
   };
