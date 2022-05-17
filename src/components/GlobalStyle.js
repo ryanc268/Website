@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
 html{
     @media (max-width: 500px){
         font-size: 40%;
-        overflow-x: hidden;
     }
 }
 
