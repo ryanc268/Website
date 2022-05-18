@@ -30,7 +30,7 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.5 }}
             initial={{ width: "0%" }}
-            animate={{ width: url === "/work" ? "50%" : "0%" }}
+            animate={{ width: url.includes("/work") ? "50%" : "0%" }}
           />
         </li>
         <li>
@@ -85,22 +85,37 @@ const StyledNav = styled.nav`
     padding-left: 10rem;
     position: relative;
   }
-  @media (max-width: 500px) {
-    flex-direction: column;
-    padding: 2rem 1rem;
+  @media (max-width: 1300px) {
+    white-space: nowrap;
     #logo {
-      display: inline-block;
-      margin: 2rem;
+      font-size: 2.2rem;
     }
     ul {
-      padding: 2rem;
-      justify-content: space-around;
-      width: 100%;
-      a {
-        font-size: 1.3rem;
-      }
+      padding-left: 9rem;
       li {
-        padding: 0;
+        padding-left: 3rem;
+      }
+      a {
+        font-size: 1rem;
+        padding-right: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    min-height: 8vh;
+    flex-direction: column;
+    justify-content: space-between;
+    #logo {
+      display: inline-block;
+      font-size: 2.5rem;
+    }
+    ul {
+      padding: 0;
+      padding-bottom: 1rem;
+      a {
+        font-size: 1.5rem;
+        padding: 0rem, 3rem;
       }
     }
   }
@@ -111,11 +126,11 @@ const Line = styled(motion.div)`
   background: #01c4fa;
   width: 0%;
   position: absolute;
-  bottom: -80%;
+  bottom: -50%;
   left: auto;
   border-radius: 2px;
   @media (max-width: 500px) {
-    left: 0%;
+    bottom: -35%;
   }
 `;
 

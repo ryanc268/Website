@@ -63,22 +63,30 @@ const MyWork = () => {
 };
 
 const Work = styled(motion.div)`
-  min-height: 100vh;
+  //min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
   }
   @media (max-width: 500px) {
-    padding: 2rem 2rem;
+    padding: 7rem 2rem;
   }
 `;
 
 const Title = styled(motion.h2)`
   color: white;
+  @media (max-width: 1300px) {
+    font-size: 3rem;
+  }
 `;
 
 const Movie = styled(motion.div)`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -86,9 +94,18 @@ const Movie = styled(motion.div)`
     margin-bottom: 3rem;
   }
   img {
-    width: 100%;
-    height: 75vh;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
+  }
+  @media (max-width: 500px) {
+    img {
+      width: 90%;
+      height: auto;
+    }
   }
 `;
 

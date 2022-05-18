@@ -11,11 +11,16 @@ import MovieDetail from "./pages/MovieDetail";
 import { Routes, Route, useLocation } from "react-router-dom";
 //Animation
 import { AnimatePresence } from "framer-motion";
+//Dynamic Meta Tag Content
+import Helmet from "react-helmet";
 
 function App() {
   const location = useLocation();
   return (
     <div className="App">
+      <Helmet>
+        <title>Testing</title>
+      </Helmet>
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>

@@ -57,26 +57,33 @@ const Details = styled(motion.div)`
 `;
 
 const Headline = styled.div`
-  min-height: 90vh;
-  padding-top: 20vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
   h2 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   img {
-    width: 100%;
-    height: 70vh;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
+  }
+  @media (max-width: 500px) {
+    img {
+      width: 90%;
+      height: auto;
+    }
   }
 `;
 
 const Awards = styled.div`
-  min-height: 80vh;
+  //min-height: 80vh;
   display: flex;
-  margin: 5rem 10rem;
+  //margin: 5rem 10rem, 5rem, 10rem;
   align-items: center;
   justify-content: space-around;
   @media (max-width: 500px) {
@@ -102,11 +109,21 @@ const AwardStyle = styled.div`
 `;
 
 const ImageDisplay = styled.div`
-  min-height: 50vh;
+  //min-height: 50vh;
+  margin-bottom: 5%;
   img {
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
+  }
+  @media (max-width: 500px) {
+    img {
+      width: 90%;
+      height: auto;
+    }
   }
 `;
 
