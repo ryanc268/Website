@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>Testing</title>
+        <title>Ryan Coppa's Portfolio</title>
       </Helmet>
       <GlobalStyle />
       <Nav />

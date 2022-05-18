@@ -1,4 +1,6 @@
 import React from "react";
+//Dynamic Meta Tag Content
+import Helmet from "react-helmet";
 //Styles
 import styled from "styled-components";
 //Images
@@ -31,6 +33,9 @@ const MyWork = () => {
       exit="exit"
       style={{ background: "#1b1b1b" }}
     >
+      <Helmet>
+        <title>My Projects</title>
+      </Helmet>
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>

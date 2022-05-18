@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+//Dynamic Meta Tag Content
+import Helmet from "react-helmet";
 //Styles
 import styled from "styled-components";
 //Loaded Data
@@ -30,6 +32,9 @@ const MovieDetail = () => {
           animate="show"
           exit="exit"
         >
+          <Helmet>
+            <title>Project - {movie.title}</title>
+          </Helmet>
           <Headline>
             <h2>{movie.title}</h2>
             <img src={movie.mainImg} alt="movie" />

@@ -1,4 +1,6 @@
 import React from "react";
+//Dynamic Meta Tag Content
+import Helmet from "react-helmet";
 //Styles
 import styled from "styled-components";
 //Animations
@@ -15,6 +17,9 @@ const ContactMe = () => {
       exit="exit"
       style={{ background: "#1b1b1b" }}
     >
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <Title>
         <Hide>
           <motion.h2 variants={titleAnim}>UNDER CONSTRUCTION</motion.h2>
