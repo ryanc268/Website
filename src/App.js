@@ -1,3 +1,4 @@
+import React from "react";
 //Global Style
 import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
@@ -15,6 +16,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 //Dynamic Meta Tag Content
 import Helmet from "react-helmet";
+
 
 function App() {
   const location = useLocation();
@@ -35,6 +37,7 @@ function App() {
         <meta property="og:image" content={drakala} />
         <meta property="og:url" content="https://ryanc268.github.io/" />
         <meta property="og:site_name" content="Ryan Coppa's Portfolio" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Home Page" />
         <meta
           name="twitter:description"
