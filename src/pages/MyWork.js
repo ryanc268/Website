@@ -35,6 +35,21 @@ const MyWork = () => {
     >
       <Helmet>
         <title>My Projects</title>
+        <meta
+          name="description"
+          content="Find out what projects I've been creating lately, stay up-to-date!"
+        />
+        <meta property="og:title" content="My Projects" />
+        <meta
+          property="og:description"
+          content="See what projects I've been up to!"
+        />
+        <meta property="og:url" content="https://ryanc268.github.io/#/work" />
+        <meta name="twitter:title" content="My Projects" />
+        <meta
+          name="twitter:description"
+          content="See what projects I've been up to!"
+        />
       </Helmet>
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>

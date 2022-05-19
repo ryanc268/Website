@@ -19,6 +19,24 @@ const ContactMe = () => {
     >
       <Helmet>
         <title>Contact</title>
+        <meta
+          name="description"
+          content="Contact me for any inquiries or further interest in my projects!"
+        />
+        <meta property="og:title" content="Contact Me" />
+        <meta
+          property="og:description"
+          content="Contact page of my portfolio!"
+        />
+        <meta
+          property="og:url"
+          content="https://ryanc268.github.io/#/contact"
+        />
+        <meta name="twitter:title" content="Contact Me" />
+        <meta
+          name="twitter:description"
+          content="Contact me for any inquiries or further interest in my projects!"
+        />
       </Helmet>
       <Title>
         <Hide>

@@ -7,6 +7,8 @@ import ContactMe from "./pages/ContactMe";
 import MusicLibrary from "./pages/MusicLibrary";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
+//Images
+import drakala from "./img/Drakala.png";
 //Router
 import { Routes, Route, useLocation } from "react-router-dom";
 //Animation
@@ -20,6 +22,27 @@ function App() {
     <div className="App">
       <Helmet>
         <title>Ryan Coppa's Portfolio</title>
+        <meta
+          name="description"
+          content="This is Ryan Coppa's official portfolio website. Home of all his personal programming projects and music production. Ryan Coppa is a 27 year old passionate Software Engineer who excels at finding modern solutions to any problem!"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Home Page" />
+        <meta
+          property="og:description"
+          content="Landing Page for Ryan's Portfolio. Find out what he's been up to by visiting today!"
+        />
+        <meta property="og:image" content={drakala} />
+        <meta property="og:url" content="https://ryanc268.github.io/" />
+        <meta property="og:site_name" content="Ryan Coppa's Portfolio" />
+        <meta name="twitter:title" content="Home Page" />
+        <meta
+          name="twitter:description"
+          content="This is Ryan Coppa's official portfolio website. Home of all his personal programming projects and music production. Ryan Coppa is a 27 year old passionate Software Engineer who excels at finding modern solutions to any problem!"
+        />
+        <meta name="twitter:image" content={drakala} />
+        <meta name="twitter:site" content="@Ryanc268" />
+        <meta name="twitter:creator" content="@Ryanc268" />
       </Helmet>
       <GlobalStyle />
       <Nav />
@@ -30,7 +53,7 @@ function App() {
           <Route path="/work/:id" exact element={<MovieDetail />} />
           <Route path="/contact" exact element={<ContactMe />} />
           <Route path="/music" exact element={<MusicLibrary />}>
-            <Route path=":id" element={ <MusicLibrary />} />
+            <Route path=":id" element={<MusicLibrary />} />
           </Route>
         </Routes>
       </AnimatePresence>

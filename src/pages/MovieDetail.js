@@ -34,6 +34,24 @@ const MovieDetail = () => {
         >
           <Helmet>
             <title>Project - {movie.title}</title>
+            <meta
+              name="description"
+              content={`Find information on my project ${movie.title} here!`}
+            />
+            <meta property="og:title" content={`Project - ${movie.title}`} />
+            <meta
+              property="og:description"
+              content={`Find information on my project ${movie.title} here!`}
+            />
+            <meta
+              property="og:url"
+              content={`https://ryanc268.github.io/#${movie.url}`}
+            />
+            <meta name="twitter:title" content={`Project - ${movie.title}`} />
+            <meta
+              name="twitter:description"
+              content={`Find information on my project ${movie.title} here!`}
+            />
           </Helmet>
           <Headline>
             <h2>{movie.title}</h2>
