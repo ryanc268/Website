@@ -6,6 +6,7 @@ import { HashRouter } from "react-router-dom";
 import ReactDOMServer from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import Helmet from "react-helmet";
+Helmet.canUseDOM = false;
 
 ReactDOM.render(
   <React.StrictMode>
