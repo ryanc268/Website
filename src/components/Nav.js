@@ -85,7 +85,7 @@ const StyledNav = styled.nav`
     padding-left: 10rem;
     position: relative;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1460px) {
     white-space: nowrap;
     #logo {
       font-size: 2.2rem;
