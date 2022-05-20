@@ -6,7 +6,10 @@ import styled from "styled-components";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
-//Components
+//Resume
+import resume from "../resources/resume.pdf";
+//Social Icons
+import { SocialIcon } from "react-social-icons";
 
 const ContactMe = () => {
   return (
@@ -37,26 +40,34 @@ const ContactMe = () => {
       </Helmet>
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnim}>UNDER CONSTRUCTION</motion.h2>
+          <motion.h2 variants={titleAnim}>
+            Contact <span>Me</span>
+          </motion.h2>
         </Hide>
       </Title>
       <div>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
-            <h2>Not Ready Yet</h2>
+            <a
+              className="buttonClass"
+              href={resume}
+              download="Ryan_Coppa_Resume_Public.pdf"
+            >
+              Download My Public Resume
+            </a>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
-            <h2>In Progress</h2>
+            <SocialIcon
+              url="https://www.linkedin.com/in/ryan-coppa"
+              style={{ height: 80, width: 80 }}
+            />
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
-            <h2>Another UNDER CONSTRUCTION</h2>
+            <p>🚧 Page Still Under Construction 🚧</p>
           </Social>
         </Hide>
       </div>
@@ -65,9 +76,11 @@ const ContactMe = () => {
 };
 
 const ContactStyle = styled(motion.div)`
-  padding: 5rem 10rem;
+  text-align: center;
   color: white;
-  min-height: 90vh;
+  .buttonClass {
+    text-decoration: none;
+  }
   @media (max-width: 500px) {
     padding: 2rem;
     font-size: 1rem;
@@ -75,6 +88,7 @@ const ContactStyle = styled(motion.div)`
 `;
 
 const Title = styled.div`
+  margin-top: 2rem;
   margin-bottom: 4rem;
   color: white;
   @media (max-width: 500px) {
@@ -86,19 +100,11 @@ const Hide = styled.div`
   overflow: hidden;
 `;
 
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: white;
-`;
-
 const Social = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  h2 {
-    margin: 2rem;
-  }
+  margin: 4rem;
 `;
 
 export default ContactMe;

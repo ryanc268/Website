@@ -89,7 +89,7 @@ const Headline = styled.div`
     margin-right: auto;
   }
   img {
-    width: 50%;
+    width: 40%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -97,7 +97,7 @@ const Headline = styled.div`
   }
   @media (max-width: 500px) {
     img {
-      width: 90%;
+      width: 80%;
       height: auto;
     }
   }
@@ -135,7 +135,7 @@ const ImageDisplay = styled.div`
   //min-height: 50vh;
   margin-bottom: 5%;
   img {
-    width: 50%;
+    width: 30%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -144,7 +144,7 @@ const ImageDisplay = styled.div`
   }
   @media (max-width: 500px) {
     img {
-      width: 90%;
+      width: 60%;
       height: auto;
     }
   }

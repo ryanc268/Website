@@ -19,9 +19,10 @@ body{
     font-family: 'Merriweather', serif;
     overflow-x: hidden;
 }
+.buttonClass,
 button{
     font-weight: bold;
-    font-size: 1.1.rem;
+    font-size: 1.1rem;
     cursor: pointer;
     padding: 1rem 2rem;
     border: 3px solid #01C4FA;

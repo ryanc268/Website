@@ -1,51 +1,51 @@
 //Import Images
 import card from "./img/valerianX-card.jpg";
-import logo from "./img/valerianX-logo.png";
+import snowGolem from "./img/snow-golem.png";
 import goonIcon from "./img/goonbot-small.png";
 
 export const MovieState = () => {
   return [
     {
-      title: "UNDER CONSTRUCTION",
+      title: "Valerian X",
       mainImg: card,
-      secondaryImg: logo,
+      secondaryImg: snowGolem,
       url: "/work/valerianX",
       awards: [
+        {
+          title: "PAGE STILL UNDER CONSTRUCTION",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
         {
           title: "Ryan the coding legend",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Wow!",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "Smile :)",
+          title: "Wow",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: "UNDER CONSTRUCTION",
+      title: "Goon Bot",
       mainImg: goonIcon,
       url: "/work/goon-bot",
       secondaryImg: goonIcon,
       awards: [
+        {
+          title: "PAGE STILL UNDER CONSTRUCTION",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
         {
           title: "Ryan the coding legend",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Wow!",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "Smile :)",
+          title: "Wow",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },

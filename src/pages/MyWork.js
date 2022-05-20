@@ -74,7 +74,10 @@ const MyWork = () => {
         </Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/goon-bot">
-          <img src={goonIcon} alt="Goon Bot Icon" />
+          <img
+            src={goonIcon}
+            alt="Goon Bot Icon"
+          />
         </Link>
       </Movie>
       <ScrollTop />
