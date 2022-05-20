@@ -28,10 +28,7 @@ const ContactMe = () => {
           property="og:description"
           content="Contact page of my portfolio!"
         />
-        <meta
-          property="og:url"
-          content="https://ryanc268.github.io/#/contact"
-        />
+        <meta property="og:url" content="https://www.ryancoppa.com/contact" />
         <meta name="twitter:title" content="Contact Me" />
         <meta
           name="twitter:description"

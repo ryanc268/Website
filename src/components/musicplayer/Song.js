@@ -18,13 +18,19 @@ const Song = ({ currentSong, isPlaying }) => {
           name="description"
           content="Hear all of my old and new music projects in one convenient music library!"
         />
-        <meta property="og:title" content="My Music Library" />
+        <meta
+          property="og:title"
+          content={`Ryan's Music Library - ${currentSong.name}`}
+        />
         <meta
           property="og:description"
           content="Hear all of my old and new music projects in one convenient music library!"
         />
-        <meta property="og:url" content="https://ryanc268.github.io/#/music" />
-        <meta name="twitter:title" content="My Music Library" />
+        <meta property="og:url" content="https://www.ryancoppa.com/music" />
+        <meta
+          name="twitter:title"
+          content={`Ryan's Music Library - ${currentSong.name}`}
+        />
         <meta
           name="twitter:description"
           content="Hear all of my old and new music projects in one convenient music library!"

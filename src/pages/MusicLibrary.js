@@ -60,6 +60,8 @@ function MusicPlayer() {
 
   const audioLoadReady = () => {
     if (isPlaying) audioRef.current.play();
+    //Replace the url for meta tag / linking purposes but specifically not cause a reload
+    window.history.replaceState(null, null, `${currentSong.url}`);
   };
 
   const location = useLocation();
@@ -68,7 +70,7 @@ function MusicPlayer() {
 
   //On load this figures out if the user is looking for a specific song to load up initially
   //If it doesn't exist, redirect to the default music page
-  
+
   useEffect(() => {
     const currentSong = songs.filter((song) => song.url === url);
     if (currentSong.length !== 0) {

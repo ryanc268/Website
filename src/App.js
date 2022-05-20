@@ -17,7 +17,6 @@ import { AnimatePresence } from "framer-motion";
 //Dynamic Meta Tag Content
 import Helmet from "react-helmet";
 
-
 function App() {
   const location = useLocation();
   return (
@@ -26,7 +25,7 @@ function App() {
         <title>Ryan Coppa's Portfolio</title>
         <meta
           name="description"
-          content="This is Ryan Coppa's official portfolio website. Home of all his personal programming projects and music production. Ryan Coppa is a 27 year old passionate Software Engineer who excels at finding modern solutions to any problem!"
+          content="Home of all his personal programming projects and music production. Ryan Coppa is a 27 year old passionate Software Engineer who excels at finding modern solutions to any problem!"
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Home Page" />
@@ -35,13 +34,16 @@ function App() {
           content="Landing Page for Ryan's Portfolio. Find out what he's been up to by visiting today!"
         />
         <meta property="og:image" content={drakala} />
-        <meta property="og:url" content="https://ryanc268.github.io/" />
+        <meta property="og:url" content="https://www.ryancoppa.com/" />
         <meta property="og:site_name" content="Ryan Coppa's Portfolio" />
-        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
         <meta name="twitter:title" content="Home Page" />
         <meta
           name="twitter:description"
-          content="This is Ryan Coppa's official portfolio website. Home of all his personal programming projects and music production. Ryan Coppa is a 27 year old passionate Software Engineer who excels at finding modern solutions to any problem!"
+          content="Home of all his personal programming projects and music production. Ryan Coppa is a 27 year old passionate Software Engineer who excels at finding modern solutions to any problem!"
         />
         <meta name="twitter:image" content={drakala} />
         <meta name="twitter:site" content="@Ryanc268" />

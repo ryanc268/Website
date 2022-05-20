@@ -44,7 +44,7 @@ const MyWork = () => {
           property="og:description"
           content="See what projects I've been up to!"
         />
-        <meta property="og:url" content="https://ryanc268.github.io/#/work" />
+        <meta property="og:url" content="https://www.ryancoppa.com/work" />
         <meta name="twitter:title" content="My Projects" />
         <meta
           name="twitter:description"

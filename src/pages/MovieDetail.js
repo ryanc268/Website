@@ -45,7 +45,7 @@ const MovieDetail = () => {
             />
             <meta
               property="og:url"
-              content={`https://ryanc268.github.io/#${movie.url}`}
+              content={`https://www.ryancoppa.com/${movie.url}`}
             />
             <meta name="twitter:title" content={`Project - ${movie.title}`} />
             <meta
