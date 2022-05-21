@@ -8,6 +8,11 @@ import Song from "../components/musicplayer/Song";
 import Library from "../components/musicplayer/Library";
 import Nav from "../components/musicplayer/PlayerNav";
 
+import AudioVisualizer from "../components/AudioVisualizer";
+import { pageAnimation } from "../animation";
+//Animations
+import { motion } from "framer-motion";
+
 import data from "../data";
 
 function MusicPlayer() {
@@ -86,7 +91,13 @@ function MusicPlayer() {
   }, [url]);
 
   return (
-    <div className="MusicPlayer">
+    <motion.div
+      className="MusicPlayer"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <div className={`App ${libraryStatus ? "library-active" : ""}`}>
         <Nav
           libraryStatus={libraryStatus}
@@ -104,6 +115,7 @@ function MusicPlayer() {
           setCurrentSong={setCurrentSong}
           setSongs={setSongs}
         />
+        <AudioVisualizer isPlaying={isPlaying} audioRef={audioRef} />
         <Library
           audioRef={audioRef}
           songs={songs}
@@ -121,7 +133,7 @@ function MusicPlayer() {
           onLoadedData={audioLoadReady}
         ></audio>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
