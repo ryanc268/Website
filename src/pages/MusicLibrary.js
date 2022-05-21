@@ -115,7 +115,6 @@ function MusicPlayer() {
           setCurrentSong={setCurrentSong}
           setSongs={setSongs}
         />
-        <AudioVisualizer isPlaying={isPlaying} audioRef={audioRef} />
         <Library
           audioRef={audioRef}
           songs={songs}
@@ -132,6 +131,7 @@ function MusicPlayer() {
           onEnded={songEndHandler}
           onLoadedData={audioLoadReady}
         ></audio>
+        <AudioVisualizer audioRef={audioRef} />
       </div>
     </motion.div>
   );

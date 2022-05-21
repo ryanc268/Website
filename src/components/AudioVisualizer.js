@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 //Styles
 import styled from "styled-components";
 
-const AudioVisualizer = ({ isPlaying, audioRef }) => {
+const AudioVisualizer = ({ audioRef }) => {
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
 
@@ -36,15 +36,15 @@ const AudioVisualizer = ({ isPlaying, audioRef }) => {
     let x;
 
     const animate = () => {
+      x = 0;
+      contextRef.current.clearRect(
+        0,
+        0,
+        canvasRef.current.width,
+        canvasRef.current.height
+      );
       if (!audio.paused) {
-        console.log("animating");
-        x = 0;
-        contextRef.current.clearRect(
-          0,
-          0,
-          canvasRef.current.width,
-          canvasRef.current.height
-        );
+        //console.log("animating");
         analyser.getByteFrequencyData(dataArray);
         drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray);
       }
