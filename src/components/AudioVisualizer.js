@@ -3,7 +3,9 @@ import React, { useEffect, useRef } from "react";
 //Styles
 import styled from "styled-components";
 
-const AudioVisualizer = ({ audioRef }) => {
+const audioContext = new AudioContext();
+
+const AudioVisualizer = ({ isPlaying, audioRef }) => {
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
 
@@ -16,11 +18,14 @@ const AudioVisualizer = ({ audioRef }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    audioContext.resume();
+  }, [isPlaying]);
+
   //Event Handlers
   const startVisualizer = () => {
     const audio = audioRef.current;
     console.log(audio);
-    const audioContext = new AudioContext();
     const audioSource = audioContext.createMediaElementSource(audio);
     const analyser = audioContext.createAnalyser();
     audioSource.connect(analyser);
