@@ -104,7 +104,7 @@ const Social = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem;
+  margin: 2rem;
 `;
 
 export default ContactMe;
