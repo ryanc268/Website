@@ -36,10 +36,7 @@ function App() {
         <meta property="og:image" content={drakala} />
         <meta property="og:url" content="https://www.ryancoppa.com/" />
         <meta property="og:site_name" content="Ryan Coppa's Portfolio" />
-        <meta
-          name="twitter:card"
-          content="summary_large_image"
-        />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Home Page" />
         <meta
           name="twitter:description"

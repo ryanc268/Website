@@ -12,6 +12,7 @@ import NightRide from "./music/NightRide.mp3";
 import OldschoolDark from "./music/OldschoolDark.mp3";
 import YoshiDnb from "./music/YoshiDnb.mp3";
 import SadboiWubs from "./music/SadboiWubs.mp3";
+import TechnoTune from "./music/IndustrialTechno.mp3";
 import Sunset from "./music/Sunset.mp3";
 import ThisIsYourGod from "./music/ThisIsYourGod.mp3";
 import ValerianBattleTheme from "./music/ValerianBattleTheme.mp3";
@@ -26,6 +27,7 @@ import WubbyRap from "./music/WubbyRap.mp3";
 import dnbrandom from "./img/musicart/dnbrandom.jpg";
 import basshouse from "./img/musicart/bass-house.jpg";
 import skrollex from "./img/musicart/skrollex.jpg";
+import technoWarehouse from "./img/musicart/techno-warehouse.jpg";
 import bubbles from "./img/musicart/bubbles.jpg";
 import heavy from "./img/musicart/Heavy-Metal.jpg";
 import dark from "./img/musicart/dark-forest.jpg";
@@ -73,6 +75,17 @@ function songLibrary() {
       active: false,
       color: ["#3B4E59", "#1B272F"],
       audio: SadboiWubs,
+    },
+    {
+      name: "Techno Warehouse Tune [CLIP]",
+      artist: "Ryan Coppa",
+      year: 2022,
+      url: "/music/techno-warehouse-tune",
+      cover: technoWarehouse,
+      id: uuidv4(),
+      active: false,
+      color: ["#3B4E59", "#1B272F"],
+      audio: TechnoTune,
     },
     {
       name: "Ryan and Gina Riddim Collab [CLIP]",

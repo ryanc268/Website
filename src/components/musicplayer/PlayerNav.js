@@ -5,10 +5,10 @@ import { faMusic } from "@fortawesome/free-solid-svg-icons";
 const PlayerNav = ({ libraryStatus, setLibraryStatus }) => {
   return (
     <nav>
-      <h3>Music Time Machine</h3>
+      <h3>Visualize My Music With My Custom Visualizer</h3>
       <button onClick={() => setLibraryStatus(!libraryStatus)}>
         Library
-        <FontAwesomeIcon icon={faMusic}/>
+        <FontAwesomeIcon icon={faMusic} />
       </button>
     </nav>
   );

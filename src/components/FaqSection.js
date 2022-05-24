@@ -26,7 +26,8 @@ const FaqSection = () => {
           <div className="answer">
             <p>In order of experience: </p>
             <p>
-              Java, C#, NodeJS, SQL, Javascript/JQuery, React, Kotlin, Typescript, HTML5
+              Java, NodeJS/Javascript/JQuery, C#, SQL, ReactJS, Kotlin,
+              Typescript, HTML5
             </p>
           </div>
         </Toggle>
@@ -38,7 +39,7 @@ const FaqSection = () => {
             </p>
             <p>
               React, Framer-Motion, Styled-Components,
-              React-Intersection-Observer and React-Router-Dom
+              React-Intersection-Observer, React-Helmet and React-Router-Dom
             </p>
           </div>
         </Toggle>

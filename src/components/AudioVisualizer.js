@@ -25,12 +25,11 @@ const AudioVisualizer = ({ isPlaying, audioRef }) => {
   //Event Handlers
   const startVisualizer = () => {
     const audio = audioRef.current;
-    console.log(audio);
     const audioSource = audioContext.createMediaElementSource(audio);
     const analyser = audioContext.createAnalyser();
     audioSource.connect(analyser);
     analyser.connect(audioContext.destination);
-    analyser.fftSize = 4096;
+    analyser.fftSize = 1024;
     //will be half of fftSize
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
@@ -61,7 +60,16 @@ const AudioVisualizer = ({ isPlaying, audioRef }) => {
   const drawVisualizer = (bufferLength, x, barWidth, barHeight, dataArray) => {
     for (let i = 0; i < bufferLength; i++) {
       barHeight = dataArray[i] / 1.7;
-      contextRef.current.fillStyle = "#262626";
+      //top of the bar design
+      contextRef.current.fillStyle = "#666666";
+      contextRef.current.fillRect(
+        x,
+        canvasRef.current.height - barHeight - 3,
+        barWidth,
+        barHeight > 0 ? 2 : 0
+      );
+      //main bar design
+      contextRef.current.fillStyle = "#333333";
       contextRef.current.fillRect(
         x,
         canvasRef.current.height - barHeight,
@@ -87,10 +95,7 @@ const Visualizer = styled.div`
     left: 0;
     width: 120%;
     height: 100%;
-    filter: blur(2px) contrast(1);
-    @media (max-width: 500px) {
-      filter: blur(0) contrast(1);
-    }
+    filter: blur(0) contrast(1.1);
   }
 `;
 
