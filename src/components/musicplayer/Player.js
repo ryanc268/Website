@@ -46,7 +46,7 @@ const Player = ({
       skipTrackHandler("skip-back")
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [currentSong]);
 
   useEffect(() => {
     if ("mediaSession" in navigator) {
