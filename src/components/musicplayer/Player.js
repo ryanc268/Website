@@ -39,20 +39,20 @@ const Player = ({
   };
 
   useEffect(() => {
-    navigator.mediaSession.setActionHandler("nexttrack", (event) => {
-      console.log("Next triggered by navigator");
-      skipTrackHandler("skip-forward");
-    });
-    navigator.mediaSession.setActionHandler("previoustrack", (event) => {
-      console.log("Previous triggered by navigator");
-      skipTrackHandler("skip-back");
-    });
+    navigator.mediaSession.setActionHandler("play", () => playSongHandler());
+    navigator.mediaSession.setActionHandler("pause", () => playSongHandler());
+    navigator.mediaSession.setActionHandler("stop", null);
+    navigator.mediaSession.setActionHandler("nexttrack", () =>
+      skipTrackHandler("skip-forward")
+    );
+    navigator.mediaSession.setActionHandler("previoustrack", () =>
+      skipTrackHandler("skip-back")
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     if ("mediaSession" in navigator) {
-      console.log("mediaSession exists");
       navigator.mediaSession.metadata = new MediaMetadata({
         title: currentSong.name,
         artist: currentSong.artist,
