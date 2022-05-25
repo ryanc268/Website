@@ -86,9 +86,12 @@ const Player = ({
           },
         ],
       });
+      navigator.mediaSession.setPositionState({
+        position: songInfo.currentTime,
+      });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentSong]);
+  }, [currentSong, isPlaying]);
 
   //Event Handlers
   const playSongHandler = () => {
