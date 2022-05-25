@@ -38,18 +38,18 @@ const Player = ({
     setSongs(newSongs);
   };
 
-  useEffect(() => {
-    navigator.mediaSession.setActionHandler("nexttrack", async () =>
-      skipTrackHandler("skip-forward")
-    );
-    navigator.mediaSession.setActionHandler("previoustrack", async () =>
-      skipTrackHandler("skip-back")
-    );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentSong]);
-
+  //attach media session events / data every time currentSong is updated
   useEffect(() => {
     if ("mediaSession" in navigator) {
+      navigator.mediaSession.setActionHandler("play", () => playSongHandler());
+      navigator.mediaSession.setActionHandler("pause", () => playSongHandler());
+      navigator.mediaSession.setActionHandler("stop", null);
+      navigator.mediaSession.setActionHandler("nexttrack", async () =>
+        skipTrackHandler("skip-forward")
+      );
+      navigator.mediaSession.setActionHandler("previoustrack", async () =>
+        skipTrackHandler("skip-back")
+      );
       navigator.mediaSession.metadata = new MediaMetadata({
         title: currentSong.name,
         artist: currentSong.artist,
@@ -87,6 +87,7 @@ const Player = ({
         ],
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSong]);
 
   //Event Handlers
