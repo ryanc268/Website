@@ -9,7 +9,6 @@ import MusicLibrary from "./pages/MusicLibrary";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 //Images
-import drakala from "./img/Drakala.png";
 import logo192 from "./img/logo192.png";
 import icon from "./img/favicon.ico";
 //Router
@@ -36,7 +35,7 @@ function App() {
           property="og:description"
           content="Landing Page for Ryan's Portfolio. Find out what he's been up to by visiting today!"
         />
-        <meta property="og:image" content={baseUrl + drakala} />
+        <meta property="og:image" content="https://i.imgur.com/xfS8kP2.png" />
         <meta property="og:url" content="https://www.ryancoppa.com/" />
         <meta property="og:site_name" content="Ryan Coppa's Portfolio" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +44,7 @@ function App() {
           name="twitter:description"
           content="Home of all his personal programming projects and music production. Ryan Coppa is a 27 year old passionate Software Engineer who excels at finding modern solutions to any problem!"
         />
-        <meta name="twitter:image" content={baseUrl + drakala} />
+        <meta name="twitter:image" content="https://i.imgur.com/xfS8kP2.png" />
         <meta name="twitter:site" content="@Ryanc268" />
         <meta name="twitter:creator" content="@Ryanc268" />
 
