@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -37,6 +37,61 @@ const Player = ({
     });
     setSongs(newSongs);
   };
+
+  useEffect(() => {
+    navigator.mediaSession.setActionHandler("nexttrack", (event) => {
+      console.log("Next triggered by navigator");
+      skipTrackHandler("skip-forward");
+    });
+    navigator.mediaSession.setActionHandler("previoustrack", (event) => {
+      console.log("Previous triggered by navigator");
+      skipTrackHandler("skip-back");
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if ("mediaSession" in navigator) {
+      console.log("mediaSession exists");
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: currentSong.name,
+        artist: currentSong.artist,
+        artwork: [
+          {
+            src: currentSong.cover,
+            sizes: "96x96",
+            type: "image/jpg",
+          },
+          {
+            src: currentSong.cover,
+            sizes: "128x128",
+            type: "image/jpg",
+          },
+          {
+            src: currentSong.cover,
+            sizes: "192x192",
+            type: "image/jpg",
+          },
+          {
+            src: currentSong.cover,
+            sizes: "256x256",
+            type: "image/jpg",
+          },
+          {
+            src: currentSong.cover,
+            sizes: "384x384",
+            type: "image/jpg",
+          },
+          {
+            src: currentSong.cover,
+            sizes: "512x512",
+            type: "image/jpg",
+          },
+        ],
+      });
+    }
+  }, [currentSong]);
+
   //Event Handlers
   const playSongHandler = () => {
     if (isPlaying) {
