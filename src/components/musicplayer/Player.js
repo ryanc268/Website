@@ -39,13 +39,10 @@ const Player = ({
   };
 
   useEffect(() => {
-    navigator.mediaSession.setActionHandler("play", () => playSongHandler());
-    navigator.mediaSession.setActionHandler("pause", () => playSongHandler());
-    navigator.mediaSession.setActionHandler("stop", null);
-    navigator.mediaSession.setActionHandler("nexttrack", () =>
+    navigator.mediaSession.setActionHandler("nexttrack", async () =>
       skipTrackHandler("skip-forward")
     );
-    navigator.mediaSession.setActionHandler("previoustrack", () =>
+    navigator.mediaSession.setActionHandler("previoustrack", async () =>
       skipTrackHandler("skip-back")
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps

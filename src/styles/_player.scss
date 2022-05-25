@@ -11,6 +11,9 @@
   display: flex;
   padding-top: 15px;
   padding-bottom: 10px;
+  @media (max-width: 500px) {
+    font-size: 1.7rem;
+  }
 }
 
 .time-control {
@@ -43,6 +46,9 @@
   width: 20%;
   svg {
     cursor: pointer;
+  }
+  @media (max-width: 500px) {
+    font-size: 1.7rem;
   }
 }
 
