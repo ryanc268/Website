@@ -17,6 +17,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.33.1",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.2.1",
     "react-social-icons": "^5.13.0",
     "styled-components": "^5.3.3",

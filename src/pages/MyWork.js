@@ -5,7 +5,8 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 //Images
 import card from "../img/valerianX-card.jpg";
-import goonIcon from "../img/goonbot-small.png";
+import goonIcon from "../img/projectart/goonbot/goonbot-small.png";
+import reactbig from "../img/projectart/musicplayer/react-icon-big.png";
 //Router
 import { Link } from "react-router-dom";
 //Animations
@@ -24,7 +25,8 @@ import ScrollTop from "../components/ScrollTop";
 
 const MyWork = () => {
   const [element, controls] = useScroll();
-  //const [element2, controls2] = useScroll();
+  const [element2, controls2] = useScroll();
+
   return (
     <Work
       variants={pageAnimation}
@@ -70,14 +72,26 @@ const MyWork = () => {
       </Movie>
       <Movie variants={fade} animate={controls} initial="hidden" ref={element}>
         <Title>
+          React <span>Audio Library</span> w/ Visualization (Featured in Music
+          Prod Tab)
+        </Title>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/react-music-player">
+          <img src={reactbig} alt="React Icon" />
+        </Link>
+      </Movie>
+      <Movie
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+        ref={element2}
+      >
+        <Title>
           <span>Goon Bot</span> NodeJS Discord Bot
         </Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/goon-bot">
-          <img
-            src={goonIcon}
-            alt="Goon Bot Icon"
-          />
+          <img src={goonIcon} alt="Goon Bot Icon" />
         </Link>
       </Movie>
       <ScrollTop />

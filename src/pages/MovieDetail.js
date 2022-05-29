@@ -10,6 +10,9 @@ import { useLocation } from "react-router-dom";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+//image carosel
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const MovieDetail = () => {
   const location = useLocation();
@@ -55,7 +58,28 @@ const MovieDetail = () => {
           </Helmet>
           <Headline>
             <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt="movie" />
+            <div className="carousels">
+              {movie.carousels.map((carousel) => (
+                <div className="carousel" key={carousel.carouselName}>
+                  <h3>{carousel.carouselName}</h3>
+                  <Carousel
+                    autoPlay={true}
+                    infiniteLoop={true}
+                    swipeable={true}
+                    emulateTouch={true}
+                    showThumbs={false}
+                    showIndicators={false}
+                  >
+                    {carousel.carouselImgs.map((image) => (
+                      <div key={image.name}>
+                        <img src={image.image} alt="movie" />
+                        <p className="legend">{image.name}</p>
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+              ))}
+            </div>
           </Headline>
           <Awards>
             {movie.awards.map((award) => (
@@ -88,17 +112,23 @@ const Headline = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
-  img {
-    width: 40%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-  }
-  @media (max-width: 500px) {
-    img {
-      width: 80%;
-      height: auto;
+  .carousels {
+    display: inline-flex;
+    .carousel {
+      margin-top: auto;
+      margin-bottom: auto;
+      h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .carousel-root {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 500px) {
+          width: 80%;
+        }
+      }
     }
   }
 `;
@@ -116,7 +146,7 @@ const Awards = styled.div`
 `;
 
 const AwardStyle = styled.div`
-  padding: 5rem;
+  padding: 3rem;
   h3 {
     font-size: 2rem;
   }
