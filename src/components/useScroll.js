@@ -1,11 +1,11 @@
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 
-export const useScroll = () => {
+export const useScroll = (delay) => {
   const controls = useAnimation();
   const [element, view] = useInView({ threshold: 0.3 });
   if (view) {
-    controls.start("show");
+    setTimeout(() => controls.start("show"), delay);
   } else {
     controls.start("hidden");
   }

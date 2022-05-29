@@ -24,7 +24,7 @@ import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
 const MyWork = () => {
-  const [element, controls] = useScroll();
+  const [element, controls] = useScroll(700);
   const [element2, controls2] = useScroll();
 
   return (
