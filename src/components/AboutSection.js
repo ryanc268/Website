@@ -1,5 +1,5 @@
 import React from "react";
-import drakala from "../img/Drakala.png";
+import portrait from "../img/portrait.png";
 //Styles
 import { About, Description, Image, Hide } from "../styles";
 //Animations
@@ -30,7 +30,7 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact Me</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={drakala} alt="Drakala" />
+        <motion.img variants={photoAnim} src={portrait} alt="Self Portrait" />
       </Image>
       <Wave />
     </About>

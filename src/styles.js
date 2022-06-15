@@ -39,7 +39,7 @@ export const Image = styled.div`
   z-index: 2;
   position: sticky;
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: cover;
   }
