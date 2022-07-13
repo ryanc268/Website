@@ -8,12 +8,13 @@ import HukaeThingRyanGina from "./music/HukaeThingRyanGina.mp3";
 import MidTempo from "./music/MidTempo.mp3";
 import Mystery from "./music/Mystery.mp3";
 import NeuroDnb from "./music/NeuroDnb.mp3";
-import NightRide from "./music/NightRide.mp3";
 import OldschoolDark from "./music/OldschoolDark.mp3";
 import YoshiDnb from "./music/YoshiDnb.mp3";
 import SadboiWubs from "./music/SadboiWubs.mp3";
 import TechnoTune from "./music/IndustrialTechno.mp3";
+import IceCapRemix from "./music/SonicIceCapRemix.mp3";
 import Sunset from "./music/Sunset.mp3";
+import NightRide from "./music/NightRide.mp3";
 import ThisIsYourGod from "./music/ThisIsYourGod.mp3";
 import ValerianBattleTheme from "./music/ValerianBattleTheme.mp3";
 import ValerianBossTheme1 from "./music/ValerianBossTheme1.mp3";
@@ -37,6 +38,7 @@ import robotdnb from "./img/musicart/robot-dnb.jpg";
 import spoopboi from "./img/musicart/spoop-boi.jpg";
 import glitchy from "./img/musicart/glitchy.jpg";
 import yourgod from "./img/musicart/your-god.jpg";
+import icecaplogo from "./img/musicart/ice-cap-zone.jpg";
 import sunsetlogo from "./img/musicart/night-stroll.jpg";
 import nightridelogo from "./img/musicart/night-drive.jpg";
 import mysterylogo from "./img/musicart/mystery.jpg";
@@ -185,6 +187,17 @@ function songLibrary() {
       active: false,
       color: ["#3B4E59", "#1B272F"],
       audio: ThisIsYourGod,
+    },
+    {
+      name: "Sonic Ice Cap Zone Remix [CLIP]",
+      artist: "Ryan Coppa",
+      year: 2022,
+      url: "/music/sonicicecapremix",
+      cover: icecaplogo,
+      id: uuidv4(),
+      active: false,
+      color: ["#429EDB", "#090C9E"],
+      audio: IceCapRemix,
     },
     {
       name: "Sunset",
