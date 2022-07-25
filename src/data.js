@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 //Music Imports
+import GreenLightBootleg from "./music/GreenLightBootleg.mp3";
 import FutureDnb from "./music/FutureDnb.mp3";
 import ScaryDnb from "./music/ScaryDnb.mp3";
 import BassHouseRyanGina from "./music/BassHouseRyanGina.mp3";
@@ -25,6 +26,7 @@ import ValerianWetlandTheme from "./music/ValerianWetlandTheme.mp3";
 import WubbyRap from "./music/WubbyRap.mp3";
 
 //picture imports
+import greenlightbootleg from "./img/musicart/green-light-lorde.jpg";
 import dnbrandom from "./img/musicart/dnbrandom.jpg";
 import basshouse from "./img/musicart/bass-house.jpg";
 import skrollex from "./img/musicart/skrollex.jpg";
@@ -46,13 +48,24 @@ import mysterylogo from "./img/musicart/mystery.jpg";
 function songLibrary() {
   return [
     {
+      name: "Green Light (Lorde) Dnb Bootleg [CLIP]",
+      artist: "Ryan Coppa",
+      year: 2022,
+      url: "/music/green-light-dnb-bootleg",
+      cover: greenlightbootleg,
+      id: uuidv4(),
+      active: true,
+      color: ["#0A2623", "#167252"],
+      audio: GreenLightBootleg,
+    },
+    {
       name: "Neuro DnB [CLIP]",
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/neuro-dnb",
       cover: dnbrandom,
       id: uuidv4(),
-      active: true,
+      active: false,
       color: ["#3B4E59", "#1B272F"],
       audio: NeuroDnb,
     },
