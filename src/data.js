@@ -48,7 +48,7 @@ import mysterylogo from "./img/musicart/mystery.jpg";
 function songLibrary() {
   return [
     {
-      name: "Green Light (Lorde) Dnb Bootleg [CLIP]",
+      name: "Green Light (Lorde) Dnb Bootleg [WIP]",
       artist: "Ryan Coppa",
       year: 2022,
       url: "/music/green-light-dnb-bootleg",
