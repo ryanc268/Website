@@ -47,9 +47,9 @@ const ServicesSection = () => {
           <Card>
             <div className="icon">
               <img src={random} alt="random icon" />
-              <h3>Placeholder</h3>
+              <h3>Motivated</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Always motivated to keep up to date with the industry and the best ways of doing things</p>
           </Card>
           <Card>
             <div className="icon">

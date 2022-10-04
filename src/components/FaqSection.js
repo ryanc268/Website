@@ -22,12 +22,16 @@ const FaqSection = () => {
         Have questions? <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="What Languages Do You Know?">
+        <Toggle title="What Languages / Frameworks Do You Know?">
           <div className="answer">
             <p>In order of experience: </p>
             <p>
-              Java, NodeJS/Javascript/JQuery, C#, SQL, ReactJS, Kotlin,
-              Typescript, HTML5
+              Java, Javascript/Typescript (front and back-end), C#, SQL, React,
+              Kotlin, HTML5
+            </p>
+            <p>Future Interests: </p>
+            <p>
+              Rust, NextJS, PrismaDB and TailwindCSS
             </p>
           </div>
         </Toggle>
@@ -45,28 +49,31 @@ const FaqSection = () => {
         </Toggle>
         <Toggle title="What Technologies Have You Used For Your Games?">
           <div className="answer">
-            <p>Placeholder</p>
             <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Earum, tempore?
+              Right now the only game I've made officially is Valerian X which
+              is a mobile game made in Unity with C# but I plan on eventually
+              exploring Rust as a language and making games built directly into
+              my websites. I could write Typescript games but Rust seems to be
+              the latest and greatest for web-based games (picture a Javascript
+              + C++ hybrid)
             </p>
           </div>
         </Toggle>
         <Toggle title="What Are Your Favourite Dev. Tools?">
           <div className="answer">
-            <p>Placeholder</p>
             <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Earum, tempore?
+              VSCode for everything Javascript/Typescript (front and back-end)
             </p>
+            <p>IntelliJ for Java/Kotlin</p>
+            <p>Unity with Visual Studio for C#</p>
           </div>
         </Toggle>
         <Toggle title="What Type of Freelance Work Are You Open to Take?">
           <div className="answer">
-            <p>Placeholder</p>
             <p>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Earum, tempore?
+              Right now I'm mainly focused on my regular 9-5 job while learning
+              Typescript in my free time HOWEVER I will always take freelance
+              requests both front and back-end and we can discuss from there
             </p>
           </div>
         </Toggle>
