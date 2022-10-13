@@ -62,6 +62,14 @@ const ContactMe = () => {
             <SocialIcon
               url="https://www.linkedin.com/in/ryan-coppa"
               style={{ height: 80, width: 80 }}
+              target="_blank"
+            />
+          </Social>
+          <Social>
+            <SocialIcon
+              url="https://github.com/ryanc268"
+              style={{ height: 80, width: 80 }}
+              target="_blank"
             />
           </Social>
         </Hide>

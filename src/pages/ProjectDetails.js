@@ -14,7 +14,7 @@ import { pageAnimation } from "../animation";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-const MovieDetail = () => {
+const ProjectDetails = () => {
   const location = useLocation();
   const url = location.pathname;
   const [movies] = useState(MovieState);
@@ -191,4 +191,4 @@ const Award = ({ title, description }) => {
   );
 };
 
-export default MovieDetail;
+export default ProjectDetails;

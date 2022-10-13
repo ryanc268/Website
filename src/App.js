@@ -7,7 +7,7 @@ import MyWork from "./pages/MyWork";
 import ContactMe from "./pages/ContactMe";
 import MusicLibrary from "./pages/MusicLibrary";
 import Nav from "./components/Nav";
-import MovieDetail from "./pages/MovieDetail";
+import ProjectDetails from "./pages/ProjectDetails";
 //Images
 import logo192 from "./img/logo192.png";
 import icon from "./img/favicon.ico";
@@ -57,7 +57,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" exact element={<AboutMe />} />
           <Route path="/work" exact element={<MyWork />} />
-          <Route path="/work/:id" exact element={<MovieDetail />} />
+          <Route path="/work/:id" exact element={<ProjectDetails />} />
           <Route path="/contact" exact element={<ContactMe />} />
           <Route path="/music" exact element={<MusicLibrary />}>
             <Route path=":id" element={<MusicLibrary />} />
