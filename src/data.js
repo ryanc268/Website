@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 //Music Imports
 import GreenLightBootleg from "./music/GreenLightBootleg.mp3";
+import RetroGameMusic1 from "./music/RetroGame1.mp3";
 import FutureDnb from "./music/FutureDnb.mp3";
 import ScaryDnb from "./music/ScaryDnb.mp3";
 import BassHouseRyanGina from "./music/BassHouseRyanGina.mp3";
@@ -27,6 +28,7 @@ import WubbyRap from "./music/WubbyRap.mp3";
 
 //picture imports
 import greenlightbootleg from "./img/musicart/green-light-lorde.jpg";
+import retrogame1 from "./img/musicart/retro-game1.png";
 import dnbrandom from "./img/musicart/dnbrandom.jpg";
 import basshouse from "./img/musicart/bass-house.jpg";
 import skrollex from "./img/musicart/skrollex.jpg";
@@ -57,6 +59,17 @@ function songLibrary() {
       active: true,
       color: ["#0A2623", "#167252"],
       audio: GreenLightBootleg,
+    },
+    {
+      name: "Retro Game Music 1 [CLIP]",
+      artist: "Ryan Coppa",
+      year: 2022,
+      url: "/music/retro-game-music-1",
+      cover: retrogame1,
+      id: uuidv4(),
+      active: false,
+      color: ["#0e0703", "#910f0b"],
+      audio: RetroGameMusic1,
     },
     {
       name: "Neuro DnB [CLIP]",
