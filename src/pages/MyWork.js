@@ -7,6 +7,7 @@ import styled from "styled-components";
 import card from "../img/valerianX-card.jpg";
 import goonIcon from "../img/projectart/goonbot/goonbot-small.png";
 import reactbig from "../img/projectart/musicplayer/react-icon-big.png";
+import cubegame from "../img/projectart/cubegame/cube-game.png";
 //Router
 import { Link } from "react-router-dom";
 //Animations
@@ -24,8 +25,13 @@ import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
 const MyWork = () => {
-  const [element, controls] = useScroll(700);
-  const [element2, controls2] = useScroll();
+  const isMobile = () => {
+    return window.innerWidth < 700;
+  };
+
+  const [element, controls] = useScroll(isMobile() && 700);
+  const [element2, controls2] = useScroll(isMobile() && 900);
+  const [element3, controls3] = useScroll();
 
   return (
     <Work
@@ -59,7 +65,7 @@ const MyWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <Movie>
+      <Project>
         <Title variants={fade}>
           <span>Valerian X</span> C# Mobile Game
         </Title>
@@ -69,8 +75,23 @@ const MyWork = () => {
             <motion.img variants={photoAnim} src={card} alt="ValerianX Card" />
           </Hide>
         </Link>
-      </Movie>
-      <Movie variants={fade} animate={controls} initial="hidden" ref={element}>
+      </Project>
+      <Project variants={fade} animate={controls} initial="hidden" ref={element}>
+        <Title>
+          <span>Cube Game</span> Multiplayer Typescript Party-Game using
+          Websockets
+        </Title>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <a href="https://ryanc268-typescript-websocket-game.up.railway.app/">
+          <img src={cubegame} alt="Cube Game Banner" />
+        </a>
+      </Project>
+      <Project
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+        ref={element2}
+      >
         <Title>
           React <span>Audio Library</span> w/ Visualization (Featured in Music
           Prod Tab)
@@ -79,21 +100,21 @@ const MyWork = () => {
         <Link to="/work/react-music-player">
           <img src={reactbig} alt="React Icon" />
         </Link>
-      </Movie>
-      <Movie
+      </Project>
+      <Project
         variants={fade}
-        animate={controls2}
+        animate={controls3}
         initial="hidden"
-        ref={element2}
+        ref={element3}
       >
         <Title>
-          <span>Goon Bot</span> NodeJS Discord Bot
+          <span>Goon Bot</span> NodeJS Discord Bot (Page Under Contruction)
         </Title>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/goon-bot">
           <img src={goonIcon} alt="Goon Bot Icon" />
         </Link>
-      </Movie>
+      </Project>
       <ScrollTop />
     </Work>
   );
@@ -118,7 +139,7 @@ const Title = styled(motion.h2)`
   }
 `;
 
-const Movie = styled(motion.div)`
+const Project = styled(motion.div)`
   width: 80%;
   display: flex;
   flex-direction: column;

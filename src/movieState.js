@@ -225,6 +225,34 @@ export const MovieState = () => {
       ],
     },
     {
+      title: "Multiplayer Cube Game",
+      carousels: [
+        {
+          carouselName: "",
+          carouselImgs: [],
+        },
+      ],
+      secondaryImg: reactbig,
+      url: "/work/cubegame",
+      awards: [
+        {
+          title: "PAGE STILL UNDER CONSTRUCTION",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Ryan the coding legend",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Wow",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
+    {
       title: "React Music Player",
       carousels: [
         {
