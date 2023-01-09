@@ -26,13 +26,11 @@ const FaqSection = () => {
           <div className="answer">
             <p>In order of experience: </p>
             <p>
-              Java, Javascript/Typescript (front and back-end), C#, SQL, React,
-              Kotlin, HTML5
+              Java, Javascript/Typescript (front and back-end), NextJS, C#, SQL,
+              CSS, TailwindCSS, React, Kotlin, HTML5
             </p>
             <p>Future Interests: </p>
-            <p>
-              Rust, NextJS, PrismaDB and TailwindCSS
-            </p>
+            <p>Rust & PrismaDB</p>
           </div>
         </Toggle>
         <Toggle title="What Did You Use to Make This Website?">
@@ -55,7 +53,8 @@ const FaqSection = () => {
               exploring Rust as a language and making games built directly into
               my websites. I could write Typescript games but Rust seems to be
               the latest and greatest for web-based games (picture a Javascript
-              + C++ hybrid)
+              + C++ hybrid).
+              <span>Edit: I made a browser Typescript game :)</span>
             </p>
           </div>
         </Toggle>
